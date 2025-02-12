@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Instalar dependencias con `npm ci`
-        run: npm ci  # Asegura una instalación limpia y sin errores
+      - name: Instalar dependencias
+        run: npm install
 
       - name: Construir la aplicación
         run: npm run build
