@@ -27,6 +27,6 @@ jobs:
       - name: Desplegar en GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # La rama donde se publicará la app
+          branch: app-lotto  # La rama donde se publicará la app
           folder: build
           token: ${{ secrets.ACTIONS_TOKEN }}  # Usa el token creado aquí
