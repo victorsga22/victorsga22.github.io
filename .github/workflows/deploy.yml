@@ -28,4 +28,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: app-lotto  # La rama donde se publicará la app
+          folder: build
           token: ${{ secrets.ACTIONS_TOKEN }}  # Usa el token creado aquí
