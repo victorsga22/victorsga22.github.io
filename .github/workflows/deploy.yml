@@ -17,9 +17,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
+        
+      - name: Limpiar caché de dependencias (Opcional)
+        run: rm -rf node_modules package-lock.json
 
-      - name: Instalar dependencias
-        run: npm install
+      - name: Instalar dependencias con `npm ci`
+        run: npm ci  # Asegura una instalación limpia y sin errores
 
       - name: Construir la aplicación
         run: npm run build
