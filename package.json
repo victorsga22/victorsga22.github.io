@@ -2,7 +2,7 @@
   "name": "app-lotto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://victorsga22.github.io/app-lotto"
+  "homepage": "https://victorsga22.github.io/app-lotto",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
