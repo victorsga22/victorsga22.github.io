@@ -1,12 +1,11 @@
 import React from "react";
 
 // Componente de la tabla (solo se renderiza si hay datos)
-const DataTable = ({ data,tittle }) => {
+const DataTable = ({ data }) => {
     if (data.length === 0) return null; // No renderiza nada si data está vacío
 
     return (
         <div>
-        <h2>{tittle}</h2>
         <table
             style={{
                 marginTop: "20px",
