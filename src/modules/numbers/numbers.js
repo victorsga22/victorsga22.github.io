@@ -44,12 +44,12 @@ const Numbers = () => {
   return (
     <div>
       Números
-      <header>
+      <div>
         <InputReader text={text} onChange={(e) => setText(e)} onClick={processText}/>
         <DataTable data={data}/>
         <Calculator onClick={calculateNumbers} tittle={"Números"}/>
         <TextResult result={result}/>
-      </header>
+      </div>
     </div>
   );
 }
