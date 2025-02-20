@@ -7,7 +7,7 @@ const TextResult = ({ result, tittle }) => {
     return (
         <div>
         <h2>{tittle}</h2>
-        {result}
+        {result.map((e) => (<div>{e} </div>))}
         </div>
     );
 };

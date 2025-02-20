@@ -18,19 +18,27 @@ const Numbers = () => {
             const values = row.split(/\s+/); // Divide por espacios o tabulaciones
             return {
                 key: values[0], // Primer valor como clave
-                value1: values[1],
-                value2: values[2],
-                value3: values[3],
+                total: values[1],
+                pastYear: values[2],
+                lastYear: values[3],
             };
         });
         setData(formattedData);
     };
 
     const calculateNumbers = () =>{
-
-      const result= [1,2,3,4,5];
-
-      setResult(result)
+      let result=data.filter(a => Number.parseInt(a.lastYear)===0);
+      if(result.length>5){
+        // Ordenar primero por la tercera columna (descendente) y luego por la segunda columna (descendente)
+        result=result.sort((a, b) => a.lastYear - b.lastYear || a.pastYear - b.pastYear);
+      }
+      /*if(result.length<5){
+        // Ordenar primero por la tercera columna (descendente) y luego por la segunda columna (descendente)
+        const dataOrder=data.sort((a, b) => a.lastYear - b.lastYear || a.pastYear - b.pastYear);
+        result.add(dataOrder)
+      }*/
+      //3 números impares y 2 pares o 3 pares y 2 impares
+      setResult(result.map(a=>a.key))
     }
 
   return (

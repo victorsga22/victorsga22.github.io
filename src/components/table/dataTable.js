@@ -28,9 +28,9 @@ const DataTable = ({ data }) => {
                 {data.map((item) => (
                     <tr key={item.key}>
                         <td>{item.key}</td>
-                        <td>{item.value1}</td>
-                        <td>{item.value2}</td>
-                        <td>{item.value3}</td>
+                        <td>{item.total}</td>
+                        <td>{item.pastYear}</td>
+                        <td>{item.lastYear}</td>
                     </tr>
                 ))}
             </tbody>
