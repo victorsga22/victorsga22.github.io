@@ -2,6 +2,7 @@ import Calculator from '../../components/button/calculator.js';
 import InputReader from '../../components/input/InputReader.js';
 import DataTable from '../../components/table/dataTable.js';
 import TextResult from '../../components/text/textResult.js';
+import "../../App.css"
 
 import React, { useState } from "react";
 
@@ -43,13 +44,14 @@ const Stars = () => {
       setResult(result.map(a=>a.key))
     }
   return (
-    <div>
+    <div >
       Estrellas
+      <div class="divtable">
         <InputReader text={text} onChange={(e) => setText(e)} onClick={processText}/>
         <DataTable data={data} tittle= {"Estrellas"}/>
         <Calculator onClick={calculateStars} tittle={"Estrellas"}/>
         <TextResult result={result}/>
-
+      </div>
     </div>
   );
 }

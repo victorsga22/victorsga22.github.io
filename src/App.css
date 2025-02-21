@@ -7,3 +7,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.divtable {
+  overflow: auto;
+  max-width: 500px;
+  max-height: 400px;
+}

@@ -44,7 +44,7 @@ const Numbers = () => {
   return (
     <div>
       Números
-      <div>
+      <div class="divtable">
         <InputReader text={text} onChange={(e) => setText(e)} onClick={processText}/>
         <DataTable data={data}/>
         <Calculator onClick={calculateNumbers} tittle={"Números"}/>
