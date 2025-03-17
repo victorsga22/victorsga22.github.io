@@ -29,8 +29,8 @@ const DataTable = ({ data }) => {
                     <tr key={item.key}>
                         <td>{item.key}</td>
                         <td>{item.total}</td>
-                        <td>{item.pastYear}</td>
                         <td>{item.lastYear}</td>
+                        <td>{item.actualYear}</td>
                     </tr>
                 ))}
             </tbody>
