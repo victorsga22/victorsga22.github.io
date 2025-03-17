@@ -4,8 +4,6 @@ import DataTable from '../../components/table/dataTable.js';
 
 import React, { useState } from "react";
 import TextResult from '../../components/text/textResult.js';
-import React, { useState } from "react";
-import TextResult from '../../components/text/textResult.js';
 import { compareNumbers } from '../../utils/util.js';
 
 const Numbers = () => {
