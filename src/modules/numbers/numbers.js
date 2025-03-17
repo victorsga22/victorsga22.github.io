@@ -4,8 +4,6 @@ import DataTable from '../../components/table/dataTable.js';
 
 import React, { useState } from "react";
 import TextResult from '../../components/text/textResult.js';
-import React, { useState } from "react";
-import TextResult from '../../components/text/textResult.js';
 import { compareNumbers } from '../../utils/util.js';
 
 const Numbers = () => {
@@ -16,11 +14,11 @@ const Numbers = () => {
 
    // Función para procesar el texto y convertirlo en una lista de objetos
    const processText = () => {
-        const rows = text.trim().split(" ");
-        const formattedData = rows.map((row) => {
-            const values = row.split(/\s+/); // Divide por espacios o tabulaciones
-            return {
-                key: values[0], // Primer valor como clave
+   const rows = text.trim().split(" ");
+   const formattedData = rows.map((row) => {
+   const values = row.split(/\s+/); // Divide por espacios o tabulaciones
+   return {
+     key: values[0], // Primer valor como clave
                 total: values[1],
                 lastYear: values[2],
                 actualYear: values[3],
