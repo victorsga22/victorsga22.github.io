@@ -5,7 +5,7 @@ const TextResult = ({ result, tittle }) => {
     if (result.length === 0) return null; // No renderiza nada si data está vacío
 
     return (
-        <div>
+        <div class="result">
         <h2>{tittle}</h2>
         {result.map((e) => (<div>{e} </div>))}
         </div>

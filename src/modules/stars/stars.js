@@ -18,10 +18,10 @@ const Stars = () => {
         const formattedData = rows.map((row) => {
             const values = row.split(/\s+/); // Divide por espacios o tabulaciones
             return {
-                key: values[0], // Primer valor como clave
-                total: values[1],
-                pastYear: values[2],
-                lastYear: values[3],
+              key: values[0], // Primer valor como clave
+               total: values[1],
+               lastYear: values[2],
+               actualYear: values[3],
             };
         });
         setData(formattedData);
