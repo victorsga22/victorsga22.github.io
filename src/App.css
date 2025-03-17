@@ -13,3 +13,14 @@
   max-width: 500px;
   max-height: 400px;
 }
+
+.horizontal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  }
+  
+.result{
+  padding: 10px;
+  border-color: antiquewhite;
+  }
