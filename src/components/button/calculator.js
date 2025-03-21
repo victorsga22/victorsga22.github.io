@@ -1,11 +1,11 @@
 import React from "react";
 
-const Calculator = ({text,onClick}) => {
+const Calculator = ({tittle,onClick}) => {
 
 
     return (
         <div >
-            <button
+            <button data-testid="custom-button"
                 onClick={onClick}
                 style={{
                     padding: "10px",
@@ -16,7 +16,7 @@ const Calculator = ({text,onClick}) => {
                     borderRadius: "5px"
                 }}
             >
-                Calcular {text} 
+                Calcular {tittle} 
             </button>
         </div>
     );
